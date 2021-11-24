@@ -1,0 +1,10 @@
+@import 'styles/mixins';
+.container {
+    @include section-2-col;
+    &.reversed {
+        flex-direction: row-reverse;
+        @include media-max-width($mobile-breakpoint) {
+            flex-direction: column;
+        }
+    }
+}

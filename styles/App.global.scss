@@ -1,5 +1,6 @@
-@import 'styles/color';
+@import 'styles/colors';
 @import 'styles/typo';
+@import 'styles/spacing';
 
 * {
     box-sizing: border-box;
@@ -11,6 +12,8 @@ html,
 body {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif, -apple-system, BlinkMacSystemFont;
+    background-color: $primary;
+    color: white;
 }
 
 a {

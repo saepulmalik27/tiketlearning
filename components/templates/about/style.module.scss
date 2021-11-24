@@ -1,0 +1,10 @@
+@import 'styles/colors';
+.about {
+    background-color: $secondary;
+}
+
+.top_intersect {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}

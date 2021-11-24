@@ -1,0 +1,10 @@
+@import 'styles/mixins';
+.hero {
+    @include section-2-col;
+
+    .illu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
