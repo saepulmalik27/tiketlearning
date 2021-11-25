@@ -1,0 +1,38 @@
+@import 'styles/mixins';
+.login {
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    &_bglayer {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .bottom_layer {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+    }
+    &_container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 3;
+
+        .section {
+            @include section-2-col;
+            padding: 10rem 8.25rem;
+            @include media-max-width($xl-tablet-breakpoint) {
+                padding: 8vh 8vw;
+                flex-direction: column;
+            }
+        }
+    }
+}
