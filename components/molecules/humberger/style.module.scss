@@ -6,7 +6,7 @@
     height: 30px;
     position: fixed;
     top: 0.5rem;
-    right: 2.5rem;
+    right: 2rem;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -60,16 +60,19 @@
     }
 
     &.open {
+        top: 1rem;
         span:nth-child(1) {
             top: 0.5rem;
             -webkit-transform: rotate(135deg);
             -moz-transform: rotate(135deg);
             -o-transform: rotate(135deg);
             transform: rotate(135deg);
+            background-color: #fff;
         }
         span:nth-child(2) {
             opacity: 0;
             left: -60px;
+            background-color: #fff;
         }
         span:nth-child(3) {
             top: 0.5rem;
@@ -77,6 +80,7 @@
             -moz-transform: rotate(-135deg);
             -o-transform: rotate(-135deg);
             transform: rotate(-135deg);
+            background-color: #fff;
         }
     }
 }

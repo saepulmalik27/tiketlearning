@@ -19,6 +19,9 @@
 
     &_center {
         justify-content: center;
+        .nav_item {
+            justify-content: center;
+        }
     }
 
     &_column {

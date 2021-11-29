@@ -1,0 +1,11 @@
+@import 'styles/mixins';
+.logo {
+    @include media-max-width($mobile-breakpoint) {
+        width: 110px;
+        height: 27px;
+        svg {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

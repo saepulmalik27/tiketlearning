@@ -1,9 +1,11 @@
 @import 'styles/colors';
+@import 'styles/mixins';
 .sidebar {
     position: fixed;
-    width: 90vh;
+    width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
     background-color: $primary;
+    padding: 3.75rem 2.5rem;
 }
