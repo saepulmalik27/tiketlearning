@@ -4,6 +4,7 @@ import Section from '@/components/organisms/section'
 import Card from '@/components/organisms/card'
 import styles from './style.module.scss'
 import LoginForm from '@/components/templates/loginform'
+import Helpdesk from '@/components/molecules/Helpdesk'
 
 const Login = () => {
     return (
@@ -42,6 +43,7 @@ const Login = () => {
                     </div>
                 </Section>
             </div>
+            <Helpdesk />
         </div>
     )
 }
