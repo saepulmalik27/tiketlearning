@@ -14,4 +14,10 @@
     @include media-max-width($tablet-breakpoint) {
         padding: 8vh 8vw;
     }
+
+    .notvalid {
+        color: #ff7171;
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+    }
 }

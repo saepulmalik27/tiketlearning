@@ -23,8 +23,12 @@ const Challenge = props => {
                     ]}>
                     <h1 className="m-b-1"> List of Challenge </h1>
                     <p>
-                        Come on! Challenge yourself to Take Classes and listen
-                        to existing Audio Podcasts and Video Learning.
+                        You can take part in the challenge by sharing the key
+                        takeaways that you get after taking the class on
+                        Instagram Story using the template provided. Don’t
+                        forget to tag @peopleattiket and use the hashtags
+                        #LearningFestival2021 and #Peopleattiket on your
+                        Instagram Story. Find out the full guideline here!
                     </p>
                 </Card>
             </Container2Column>

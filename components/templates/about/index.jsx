@@ -17,7 +17,7 @@ const About = () => {
 
             <div className={styles.about}>
                 <Section>
-                    <Label title={'About tiket.com Learning Festival'} />
+                    <Label title={'About Learning Festival'} />
                     <article>
                         <p>
                             Learning Festival is a series of events and learning

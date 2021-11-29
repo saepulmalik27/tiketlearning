@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Section from '@/components/organisms/section'
 import Card from '@/components/organisms/card'
 import styles from './style.module.scss'
-import LoginForm from '@/components/templates/loginform'
+import LoginForm from '@/containers/loginform'
 import Helpdesk from '@/components/molecules/Helpdesk'
 
 const Login = () => {

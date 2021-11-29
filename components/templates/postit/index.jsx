@@ -23,8 +23,11 @@ const PostIt = props => {
                     ]}>
                     <h1 className="m-b-1"> Post-it </h1>
                     <p>
-                        Come on! Challenge yourself to Take Classes and listen
-                        to existing Audio Podcasts and Video Learning.
+                        Share what you get after participating in the session.
+                        You can click on the link below which will direct you to
+                        the Google Jamboard that has been provided and you can
+                        write key takeaways according to your style and be as
+                        creative as possible.
                     </p>
                 </Card>
             </Container2Column>

@@ -1,5 +1,8 @@
-const { combineReducers } = require('redux')
+import { combineReducers } from 'redux'
+import AuthData from './auth'
 
-const rootReducer = combineReducers({})
+const rootReducer = combineReducers({
+    authData: AuthData,
+})
 
 export default rootReducer
