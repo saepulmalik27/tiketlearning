@@ -72,7 +72,7 @@ const Hero = props => {
                     </div>
                     <div className={cx(styles.item, styles.illu)}>
                         <Image
-                            src={'/images/hero_tiket.png'}
+                            src={'/images/hero_tman.png'}
                             width="500"
                             height="500"
                         />

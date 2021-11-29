@@ -1,13 +1,26 @@
 import Logo from '@/components/atoms/logo'
 import styles from './style.module.scss'
-import React from 'react'
-// import Humberger from '@/components/molecules/humberger'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Navbar from '../navbar'
 import Humberger from '../humberger'
-// import SidebarContainer from '@/containers/SidebarContainer'
+import Sidebar from '../sidebar'
 
 const Appbar = ({ activeSidebar, sidebarState }) => {
+    const [activeNav, setActiveNav] = useState(true)
+
+    const renderSidebar = () => {
+        if (activeNav) {
+            return null
+        } else {
+            return <Sidebar />
+        }
+    }
+
+    const toggleNav = () => {
+        setActiveNav(!activeNav)
+    }
+
     return (
         <div className={styles.appbar}>
             <Logo />
@@ -52,8 +65,14 @@ const Appbar = ({ activeSidebar, sidebarState }) => {
                     ]}
                 />
             </div>
+            {renderSidebar()}
             <div className={styles.humberger}>
-                <Humberger />
+                <Humberger
+                    open={!activeNav}
+                    toggleNav={() => {
+                        toggleNav()
+                    }}
+                />
             </div>
         </div>
     )

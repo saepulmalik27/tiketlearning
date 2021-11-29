@@ -43,7 +43,7 @@ const Photobooth = props => {
                                 label="Take Photo"
                                 cta={() => {
                                     window.open(
-                                        'www.learningtiket.com',
+                                        'https://app.virtualbooth.me/booth/pd38VkLV',
                                         '_blank'
                                     )
                                 }}

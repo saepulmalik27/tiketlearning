@@ -22,7 +22,7 @@
     &.column_reverse {
         height: 100%;
         max-width: 31.25rem;
-        min-width: 20rem;
+        min-width: 19rem;
         align-self: stretch;
 
         .cardevent_event {
@@ -40,6 +40,7 @@
     }
 
     &_illu {
+        // max-width: 31.25rem;
         border-top-left-radius: 0.5rem;
         border-top-right-radius: 0.5rem;
         padding: 1rem;
@@ -52,8 +53,6 @@
     }
 
     &_event {
-        padding: 1rem;
-        max-width: 31.25rem;
         overflow-y: auto;
         &__title {
             font-size: 1.4rem;

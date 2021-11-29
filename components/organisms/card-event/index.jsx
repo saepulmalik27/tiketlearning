@@ -30,16 +30,11 @@ const CardEvent = ({ banner, event, variant, cta, label }) => {
 
     return (
         <div className={cx(styles.cardevent, contentDirection)}>
-            <div className="card_event__illu">
-                <Image
-                    src={banner}
-                    className={styles.cardevent_illu}
-                    width={1200}
-                    height={600}
-                />
+            <div className={styles.cardevent_illu}>
+                <Image src={banner} width={1200} height={600} />
             </div>
             <div className={styles.cardevent_event}>
-                <div style={label.style}>{label.category}</div>
+                {/* <div style={label.style}>{label.category}</div> */}
                 <div className={styles.cardevent_event__title}>
                     <h6>{event.title}</h6>
                 </div>
@@ -58,7 +53,7 @@ const CardEvent = ({ banner, event, variant, cta, label }) => {
                         size={'xsmall'}
                         cta={() => handleCta(val.disabled, val.url)}
                         label={val.title}
-                        icon={true}
+                        icon={false}
                     />
                 ))}
             </div>

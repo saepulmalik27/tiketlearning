@@ -21,7 +21,7 @@ const Challenge = props => {
                             src: 'https://www.learningtiket.com',
                         },
                     ]}>
-                    <h1 className="m-b-1"> On-Demand Learning </h1>
+                    <h1 className="m-b-1"> List of Challenge </h1>
                     <p>
                         Come on! Challenge yourself to Take Classes and listen
                         to existing Audio Podcasts and Video Learning.

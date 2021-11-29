@@ -11,9 +11,9 @@ const PostIt = props => {
                 <Card
                     title={{
                         type: 'image',
-                        content: '/images/challange_header.png',
-                        width: '42',
-                        height: '31',
+                        content: '/images/post-it_header.png',
+                        width: '85',
+                        height: '107',
                     }}
                     cta={[
                         {
@@ -21,7 +21,7 @@ const PostIt = props => {
                             src: 'https://www.learningtiket.com',
                         },
                     ]}>
-                    <h1 className="m-b-1"> On-Demand Learning </h1>
+                    <h1 className="m-b-1"> Post-it </h1>
                     <p>
                         Come on! Challenge yourself to Take Classes and listen
                         to existing Audio Podcasts and Video Learning.
