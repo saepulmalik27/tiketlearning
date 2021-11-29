@@ -1,10 +1,21 @@
 @import 'styles/mixins';
-.hero {
-    @include section-2-col;
 
-    .illu {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+.hero {
+    position: relative;
+    &_bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &_container {
+        @include section-2-col;
+
+        .illu {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
     }
 }

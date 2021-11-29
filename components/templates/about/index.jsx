@@ -20,19 +20,33 @@ const About = () => {
                     <Label title={'About tiket.com Learning Festival'} />
                     <article>
                         <p>
-                            Cursus aliquet in duis sit sed. Aenean est quis
-                            varius tempus vel amet euismod et. Tempus amet
-                            congue adipiscing nunc amet blandit adipiscing.
-                            Turpis senectus ultrices ornare dui etiam. Lectus
-                            eget a ipsum at sed egestas faucibus tellus velit.{' '}
+                            Learning Festival is a series of events and learning
+                            activities organized by tiket.com. As you are our
+                            most important treasure, we want to facilitate you,
+                            #Peopleattiket, in developing and mastering the
+                            skills and talents you have. This festival is
+                            specially dedicated to you who want to build
+                            positive habits to discover other areas of
+                            specialties that can broaden your skills and
+                            experience.
                         </p>
                         <br />
                         <p>
-                            Cursus aliquet in duis sit sed. Aenean est quis
-                            varius tempus vel amet euismod et. Tempus amet
-                            congue adipiscing nunc amet blandit adipiscing.
-                            Turpis senectus ultrices ornare dui etiam. Lectus
-                            eget a ipsum at sed egestas faucibus tellus velit.{' '}
+                            This year’s Learning Festival brings up the tagline
+                            “A Celebration of Knowledge”, in which every
+                            activity would portray as a celebration that will
+                            build your spirit in expanding knowledge and
+                            insight. By inviting speakers with a diverse field
+                            of expertise and also conducting daily challenges,
+                            we want you to absorb and experience a new way of
+                            learning, all of which you can access through this
+                            website!
+                        </p>
+                        <br />
+                        <p>
+                            What are you waiting for! Let’s join the excitement
+                            and we would like to welcome you to this learning
+                            paradise! #ACelebrationOfKnowledge
                         </p>
                     </article>
                 </Section>

@@ -35,7 +35,7 @@
     }
     @include media-max-width($mobile-breakpoint) {
         height: 2rem;
-        width: 3rem;
+        width: 2rem;
         span {
             height: 3px;
         }
