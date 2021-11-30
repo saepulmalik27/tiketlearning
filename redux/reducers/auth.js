@@ -1,4 +1,10 @@
-const { AUTH_SUCCESS, AUTH_START, AUTH_ERROR, AUTH_END } = require('../types')
+const {
+    AUTH_SUCCESS,
+    AUTH_START,
+    AUTH_ERROR,
+    AUTH_END,
+    UPDATE_USER_SESSION,
+} = require('../types')
 
 const initialState = {
     name: '',
@@ -9,6 +15,7 @@ const initialState = {
 }
 
 const AuthData = (state = initialState, action) => {
+    console.log(action.type)
     switch (action.type) {
         case AUTH_START:
             return (state = { ...initialState, loading: action.payload })
@@ -31,6 +38,8 @@ const AuthData = (state = initialState, action) => {
             })
         case AUTH_END:
             return (state = { ...state, loading: action.payload })
+        case UPDATE_USER_SESSION:
+            return (state = { ...state, ...action.payload, loading: false })
 
         default:
             return state

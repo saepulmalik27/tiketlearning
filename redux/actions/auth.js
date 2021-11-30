@@ -1,6 +1,13 @@
+import { saveDataToLocal } from '@/utils/function'
 import axios from 'axios'
 
-import { AUTH_END, AUTH_ERROR, AUTH_START, AUTH_SUCCESS } from '../types'
+import {
+    AUTH_END,
+    AUTH_ERROR,
+    AUTH_START,
+    AUTH_SUCCESS,
+    UPDATE_USER_SESSION,
+} from '../types'
 
 export const authLogin = data => dispatch => {
     if (data) {
@@ -17,6 +24,7 @@ export const authLogin = data => dispatch => {
                 type: AUTH_SUCCESS,
                 payload: data,
             })
+            saveDataToLocal(data)
         })
         .catch(error => {
             dispatch({
@@ -31,3 +39,25 @@ export const authLogin = data => dispatch => {
             })
         })
 }
+
+export const updateUserSession = userSession => {
+    // console.log(userSession);
+    return dispatch => {
+        //        console.log("hallo");
+        //    console.log(dispatch);
+        // if (userSession) {
+        dispatch({
+            type: UPDATE_USER_SESSION,
+            payload: userSession,
+        })
+        // }
+    }
+}
+
+// export const updateUserSession = (userSession) => {
+// console.log("hallo action");
+//     return {
+//         type : UPDATE_USER_SESSION,
+//         payload : userSession,
+//     }
+// }

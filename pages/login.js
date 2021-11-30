@@ -4,6 +4,7 @@ import Login from '@/views/Login'
 import { useRouter } from 'next/router'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
+import Loader from '@/components/molecules/loader'
 
 const LoginPage = ({ user, email }) => {
     const router = useRouter()
@@ -13,12 +14,21 @@ const LoginPage = ({ user, email }) => {
         }
     }, [email])
 
+    const renderLoader = () => {
+        if (user.loading === true) {
+            return <Loader />
+        } else {
+            return null
+        }
+    }
+
     return (
         <React.Fragment>
             <Head>
                 <title>Login | Tiket Learning Carnival</title>
             </Head>
             <Login />
+            {renderLoader()}
         </React.Fragment>
     )
 }

@@ -1,18 +1,10 @@
 // Libraries
-import React, { useEffect } from 'react'
+import React from 'react'
 import Head from 'next/head'
 import Home from '@/views/Home'
-import { connect } from 'react-redux'
-import PropTypes from 'prop-types'
-import { useRouter } from 'next/router'
+// import withAuth from '@/hoc/wrappers/withAuth'
 
-const HomePage = ({ email }) => {
-    const router = useRouter()
-    useEffect(() => {
-        if (email === '') {
-            router.push('/login')
-        }
-    }, [email])
+const HomePage = () => {
     return (
         <React.Fragment>
             <Head>
@@ -23,12 +15,4 @@ const HomePage = ({ email }) => {
     )
 }
 
-const mapStateToProps = ({ authData }) => ({
-    email: authData.email,
-})
-
-HomePage.propTypes = {
-    email: PropTypes.string,
-}
-
-export default connect(mapStateToProps)(HomePage)
+export default HomePage
