@@ -1,6 +1,5 @@
 import OnBoarding from '@/components/molecules/onboarding'
+import { LogoutAction } from '@/redux/actions/auth'
 import { connect } from 'react-redux'
 
-const mapStateToProps = ({ authData }) => ({ user: authData })
-
-export default connect(mapStateToProps)(OnBoarding)
+export default connect(null, { LogoutAction })(OnBoarding)

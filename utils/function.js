@@ -12,17 +12,32 @@ export const validateEmail = email => {
     return re.test(email)
 }
 
-export const saveDataToLocal = data => {
+export const saveAuthToLocal = data => {
     localStorage.setItem('accessToken', data.token.access)
     localStorage.setItem('refreshToken', data.token.refresh)
     localStorage.setItem('userData', JSON.stringify(data))
 }
 
-export const fetchDataFromLocal = data => {
+export const fetchAuthFromLocal = () => {
     const retriveData = localStorage.getItem('userData')
     if (retriveData !== undefined) {
         return JSON.parse(retriveData)
     } else {
         return null
+    }
+}
+
+export const deleteDataAuthLocal = () => {
+    const retriveData = localStorage.getItem('userData')
+    const accessToken = localStorage.getItem('accessToken')
+    const refreshToken = localStorage.getItem('refreshToken')
+    if (retriveData) {
+        localStorage.removeItem('userData')
+    }
+    if (accessToken) {
+        localStorage.removeItem('accessToken')
+    }
+    if (refreshToken) {
+        localStorage.removeItem('refreshToken')
     }
 }

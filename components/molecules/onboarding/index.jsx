@@ -1,24 +1,48 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import styles from './style.module.scss'
-import Link from 'next/link'
 import cx from 'classnames'
-const OnBoarding = ({ user }) => {
+import { useRouter } from 'next/router'
+import { fetchAuthFromLocal } from '@/utils/function'
+
+const OnBoarding = ({ LogoutAction }) => {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+
+    useEffect(() => {
+        getAuthFromLocal()
+    }, [name])
+
+    const getAuthFromLocal = () => {
+        const user = fetchAuthFromLocal()
+        setName(user.name)
+        setEmail(user.email)
+    }
+
+    const router = useRouter()
     return (
         <div className={cx(styles.onboarding, 'text-primary')}>
             <div>
-                <p>Hi, {user.name}!</p>
+                <p>Hi, {name}!</p>
             </div>
 
             <div>
-                {user.email !== '' ? (
-                    <Link href="/login">
-                        <a>Logout</a>
-                    </Link>
+                {email !== '' ? (
+                    <p
+                        className={styles.link}
+                        onClick={() => {
+                            LogoutAction()
+                        }}>
+                        Logout
+                    </p>
                 ) : (
-                    <Link href="/login">
-                        <a>Login</a>
-                    </Link>
+                    <p
+                        className={styles.link}
+                        onClick={() => {
+                            router.push('/login')
+                        }}>
+                        Login
+                    </p>
                 )}
             </div>
         </div>
@@ -27,6 +51,7 @@ const OnBoarding = ({ user }) => {
 
 OnBoarding.propTypes = {
     user: PropTypes.object,
+    LogoutAction: PropTypes.func,
 }
 
 export default OnBoarding
