@@ -74,6 +74,7 @@ CardEvent.propTypes = {
         category: PropTypes.string,
         style: PropTypes.object,
     }),
+    user: PropTypes.object,
 }
 
 CardEvent.defaultProps = {

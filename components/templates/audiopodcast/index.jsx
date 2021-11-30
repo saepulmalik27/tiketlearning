@@ -18,7 +18,7 @@ const AudioPodcast = props => {
                     cta={[
                         {
                             label: 'Learn More',
-                            src: 'https://www.learningtiket.com',
+                            src: 'https://member.inspigo.id/home/corporate/tiket',
                         },
                     ]}>
                     <h1 className="m-b-1"> On-Demand Learning </h1>

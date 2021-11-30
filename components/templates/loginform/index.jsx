@@ -29,7 +29,6 @@ const LoginForm = ({ authLogin, authData }) => {
             return (
                 <>
                     <p className={styles.notvalid}>
-                        {' '}
                         <Icon name="warning" multiplier={1} /> Email not valid
                     </p>
                 </>
@@ -55,7 +54,7 @@ const LoginForm = ({ authLogin, authData }) => {
 
     const handleSubmit = () => {
         authLogin({ email, password })
-        window.open('/', '_self')
+        // window.open('/', '_self')
     }
 
     return (

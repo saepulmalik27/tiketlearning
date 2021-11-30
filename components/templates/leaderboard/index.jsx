@@ -20,7 +20,7 @@ const Leaderboard = props => {
                     cta={[
                         {
                             label: 'Learn More',
-                            src: 'https://www.learningtiket.com',
+                            src: 'https://member.inspigo.id/home/corporate-dashboard/tiket',
                         },
                     ]}>
                     <h1 className="m-b-1"> Leaderboard </h1>

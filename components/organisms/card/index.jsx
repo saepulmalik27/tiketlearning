@@ -43,6 +43,9 @@ const Card = ({ body, children, title, cta }) => {
                         name: val.icon?.name,
                     }}
                     variant={'primary'}
+                    cta={() => {
+                        window.open(val.src, '_blank')
+                    }}
                 />
             )
         })
@@ -74,6 +77,7 @@ Card.propTypes = {
         height: PropTypes.string,
     }),
     cta: PropTypes.array,
+    user: PropTypes.object,
 }
 
 Card.defaultProps = {

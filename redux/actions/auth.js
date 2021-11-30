@@ -1,4 +1,5 @@
 import axios from 'axios'
+
 import { AUTH_END, AUTH_ERROR, AUTH_START, AUTH_SUCCESS } from '../types'
 
 export const authLogin = data => dispatch => {
@@ -18,7 +19,6 @@ export const authLogin = data => dispatch => {
             })
         })
         .catch(error => {
-            console.log(error, error.message)
             dispatch({
                 type: AUTH_ERROR,
                 payload: error,

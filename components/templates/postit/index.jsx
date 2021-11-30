@@ -18,7 +18,7 @@ const PostIt = props => {
                     cta={[
                         {
                             label: 'Learn More',
-                            src: 'https://www.learningtiket.com',
+                            src: 'https://jamboard.google.com/d/1VswRwCjNKdAVySnrYdy_OzOYauhtMKP3mf4jaROI1cE/edit?usp=sharing',
                         },
                     ]}>
                     <h1 className="m-b-1"> Post-it </h1>

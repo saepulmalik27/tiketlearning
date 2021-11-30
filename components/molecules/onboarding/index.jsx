@@ -11,9 +11,15 @@ const OnBoarding = ({ user }) => {
             </div>
 
             <div>
-                <Link href="/login">
-                    <a>Login</a>
-                </Link>
+                {user.email !== '' ? (
+                    <Link href="/login">
+                        <a>Logout</a>
+                    </Link>
+                ) : (
+                    <Link href="/login">
+                        <a>Login</a>
+                    </Link>
+                )}
             </div>
         </div>
     )

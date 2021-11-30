@@ -9,7 +9,7 @@ import Label from '@/components/molecules/label'
 import styles from './style.module.scss'
 import Image from 'next/image'
 import cx from 'classnames'
-import OnBoarding from '@/components/molecules/onboarding'
+import OnBoarding from '@/containers/onboarding'
 
 const Hero = props => {
     return (
@@ -24,7 +24,7 @@ const Hero = props => {
                 </div>
             </div>
             <Section>
-                <OnBoarding user={{ name: 'Malik' }} />
+                <OnBoarding />
                 <div className={styles.hero_container}>
                     <div className={styles.item}>
                         <Card
