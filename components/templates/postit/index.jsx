@@ -6,7 +6,7 @@ import Card from '@/components/organisms/card'
 
 const PostIt = props => {
     return (
-        <Section>
+        <Section id="postit">
             <Container2Column variant="reversed" illu={'/images/postit.png'}>
                 <Card
                     title={{

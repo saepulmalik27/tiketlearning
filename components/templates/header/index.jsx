@@ -1,4 +1,4 @@
-import Appbar from '@/components/molecules/appbar'
+import Appbar from '@/containers/appbar'
 import React from 'react'
 import styles from './style.module.scss'
 const Header = () => {

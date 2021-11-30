@@ -7,7 +7,7 @@ import Section from '@/components/organisms/section'
 
 const Photobooth = props => {
     return (
-        <div className={styles.photobooth}>
+        <div className={styles.photobooth} id="photobooth">
             <div className={styles.photobooth_intersect}>
                 <Image
                     src="/images/top-intersect.png"
@@ -47,6 +47,7 @@ const Photobooth = props => {
                                         '_blank'
                                     )
                                 }}
+                                variant={'secondary'}
                             />
                         </div>
                     </div>

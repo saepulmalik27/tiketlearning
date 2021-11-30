@@ -13,7 +13,7 @@ import OnBoarding from '@/containers/onboarding'
 
 const Hero = props => {
     return (
-        <div className={styles.hero}>
+        <div className={styles.hero} id="hero">
             <div className={styles.hero_bg}>
                 <div>
                     <Image

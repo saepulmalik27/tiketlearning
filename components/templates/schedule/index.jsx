@@ -8,7 +8,7 @@ import CardEvent from '@/components/organisms/card-event'
 
 const Schedule = () => {
     return (
-        <div className={styles.schedule}>
+        <div className={styles.schedule} id="schedule">
             <Label
                 title={'My Schedule'}
                 description={

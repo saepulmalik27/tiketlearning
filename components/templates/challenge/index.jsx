@@ -6,7 +6,7 @@ import Card from '@/components/organisms/card'
 
 const Challenge = props => {
     return (
-        <Section>
+        <Section id="challenge">
             <Container2Column illu={'/images/cuate.png'}>
                 <Card
                     title={{

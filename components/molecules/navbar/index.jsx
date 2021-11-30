@@ -4,7 +4,15 @@ import styles from './style.module.scss'
 import cx from 'classnames'
 import PropTypes from 'prop-types'
 
-const Navbar = ({ navitem, align, txcolor, bgcolor, variant }) => {
+const Navbar = ({
+    navitem,
+    align,
+    txcolor,
+    bgcolor,
+    variant,
+    toggleSidebar,
+    activeSidebar,
+}) => {
     let direction = 'row'
     let aligned = ''
     switch (align) {
@@ -29,6 +37,12 @@ const Navbar = ({ navitem, align, txcolor, bgcolor, variant }) => {
             break
     }
 
+    const handleClick = () => {
+        if (activeSidebar !== undefined) {
+            toggleSidebar(!activeSidebar)
+        }
+    }
+
     const renderNavItem = val => {
         return (
             <ul
@@ -38,12 +52,14 @@ const Navbar = ({ navitem, align, txcolor, bgcolor, variant }) => {
                     <li
                         className={cx(styles.nav_item)}
                         key={key}
-                        style={{ color: txcolor }}>
+                        style={{ color: txcolor }}
+                        onClick={() => {
+                            handleClick()
+                        }}>
                         <Link href={item.url}>
                             <a
                                 className={styles.nav_link}
                                 target={item.behavior || null}>
-                                {' '}
                                 {item.label}
                             </a>
                         </Link>
@@ -66,6 +82,8 @@ Navbar.propTypes = {
     txcolor: PropTypes.string,
     bgcolor: PropTypes.string,
     variant: PropTypes.string,
+    activeSidebar: PropTypes.bool,
+    toggleSidebar: PropTypes.func,
 }
 
 export default Navbar

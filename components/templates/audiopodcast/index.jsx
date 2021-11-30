@@ -6,7 +6,7 @@ import Card from '@/components/organisms/card'
 
 const AudioPodcast = props => {
     return (
-        <Section>
+        <Section id="podcast">
             <Container2Column illu={'/images/podcast.png'}>
                 <Card
                     title={{

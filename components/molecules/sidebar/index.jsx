@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style.module.scss'
 import Image from 'next/image'
-import Navbar from '../navbar'
+import Navbar from '@/containers/navbar'
 const Sidebar = () => {
     return (
         <div className={styles.sidebar}>
@@ -16,39 +16,32 @@ const Sidebar = () => {
                 align="center"
                 navitem={[
                     {
-                        url: 'https://google.com',
+                        url: '#about',
                         label: 'About',
-                        behavior: '_blank',
                     },
                     {
-                        url: 'https://google.com',
+                        url: '#schedule',
                         label: 'MySchedule',
-                        behavior: '_blank',
                     },
                     {
-                        url: 'https://google.com',
+                        url: '#podcast',
                         label: 'OndemandLearning',
-                        behavior: '_blank',
                     },
                     {
-                        url: 'https://google.com',
+                        url: '#leaderboard',
                         label: 'Leaderboard',
-                        behavior: '_blank',
                     },
                     {
-                        url: 'https://google.com',
+                        url: '#challenge',
                         label: 'Challenge',
-                        behavior: '_blank',
                     },
                     {
-                        url: 'https://google.com',
+                        url: '#postit',
                         label: 'Post-it',
-                        behavior: '_blank',
                     },
                     {
-                        url: 'https://google.com',
+                        url: '#photobooth',
                         label: 'PhotoBooth',
-                        behavior: '_blank',
                     },
                 ]}
             />

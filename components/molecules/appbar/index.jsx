@@ -1,24 +1,18 @@
 import Logo from '@/components/atoms/logo'
 import styles from './style.module.scss'
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import Navbar from '../navbar'
 import Humberger from '../humberger'
 import Sidebar from '../sidebar'
 
-const Appbar = ({ activeSidebar, sidebarState }) => {
-    const [activeNav, setActiveNav] = useState(true)
-
+const Appbar = ({ activeSidebar, toggleSidebar }) => {
     const renderSidebar = () => {
-        if (activeNav) {
+        if (!activeSidebar) {
             return null
         } else {
             return <Sidebar />
         }
-    }
-
-    const toggleNav = () => {
-        setActiveNav(!activeNav)
     }
 
     return (
@@ -28,39 +22,32 @@ const Appbar = ({ activeSidebar, sidebarState }) => {
                 <Navbar
                     navitem={[
                         {
-                            url: 'https://google.com',
+                            url: '#about',
                             label: 'About',
-                            behavior: '_blank',
                         },
                         {
-                            url: 'https://google.com',
+                            url: '#schedule',
                             label: 'MySchedule',
-                            behavior: '_blank',
                         },
                         {
-                            url: 'https://google.com',
+                            url: '#podcast',
                             label: 'OndemandLearning',
-                            behavior: '_blank',
                         },
                         {
-                            url: 'https://google.com',
+                            url: '#leaderboard',
                             label: 'Leaderboard',
-                            behavior: '_blank',
                         },
                         {
-                            url: 'https://google.com',
+                            url: '#challenge',
                             label: 'Challenge',
-                            behavior: '_blank',
                         },
                         {
-                            url: 'https://google.com',
+                            url: '#postit',
                             label: 'Post-it',
-                            behavior: '_blank',
                         },
                         {
-                            url: 'https://google.com',
+                            url: '#photobooth',
                             label: 'PhotoBooth',
-                            behavior: '_blank',
                         },
                     ]}
                 />
@@ -68,9 +55,9 @@ const Appbar = ({ activeSidebar, sidebarState }) => {
             {renderSidebar()}
             <div className={styles.humberger}>
                 <Humberger
-                    open={!activeNav}
+                    open={activeSidebar}
                     toggleNav={() => {
-                        toggleNav()
+                        toggleSidebar(!activeSidebar)
                     }}
                 />
             </div>
@@ -79,8 +66,8 @@ const Appbar = ({ activeSidebar, sidebarState }) => {
 }
 
 Appbar.propTypes = {
-    activeSidebar: PropTypes.func,
-    sidebarState: PropTypes.bool,
+    activeSidebar: PropTypes.bool,
+    toggleSidebar: PropTypes.func,
 }
 
 export default Appbar

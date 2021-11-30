@@ -50,10 +50,10 @@ const CardEvent = ({ banner, event, variant, cta, label }) => {
                     <Button
                         key={key}
                         variant={val.disabled ? 'secondary' : 'primary'}
-                        size={'xsmall'}
                         cta={() => handleCta(val.disabled, val.url)}
                         label={val.title}
                         icon={false}
+                        size={'small'}
                     />
                 ))}
             </div>

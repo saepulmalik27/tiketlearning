@@ -15,7 +15,7 @@ const About = () => {
                 />
             </div>
 
-            <div className={styles.about}>
+            <div className={styles.about} id="about">
                 <Section>
                     <Label title={'About Learning Festival'} />
                     <article>

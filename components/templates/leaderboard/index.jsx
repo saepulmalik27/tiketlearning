@@ -6,7 +6,7 @@ import Card from '@/components/organisms/card'
 
 const Leaderboard = props => {
     return (
-        <Section>
+        <Section id="leaderboard">
             <Container2Column
                 variant="reversed"
                 illu={'/images/tman-leaderboard.png'}>
