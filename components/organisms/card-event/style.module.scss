@@ -67,6 +67,8 @@
         &__description {
             font-size: 1.2rem;
             line-height: 1.6rem;
+            height: 11rem;
+
             overflow-y: auto;
 
             @include media-max-width($mobile-breakpoint) {
