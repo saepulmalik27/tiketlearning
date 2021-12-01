@@ -52,7 +52,6 @@ const Hero = props => {
                                     </div>
                                     <Link href="https://www.learningattiket.com">
                                         <a target="_blank">
-                                            {' '}
                                             www.learningattiket.com
                                         </a>
                                     </Link>
@@ -69,7 +68,7 @@ const Hero = props => {
                                     <Link
                                         href="https://www.youtube.com/c/tiket"
                                         target="_blank">
-                                        <a target="_blank"> People at Tiket</a>
+                                        <a target="_blank"> People at tiket</a>
                                     </Link>
                                 </ContainerFlex>
                             </div>
