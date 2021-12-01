@@ -37,6 +37,7 @@ export const authLogin = data => dispatch => {
     axios
         .post('https://inspigo-b2b-api.herokuapp.com/login', data)
         .then(({ data }) => {
+            data.status = 'login'
             dispatch(authSuccess(data))
             saveAuthToLocal(data)
         })
@@ -74,6 +75,7 @@ export const LogoutAction = () => dispatch => {
                     email: '',
                     token: {},
                     error_message: '',
+                    status: 'logout',
                 }
                 dispatch(authSuccess(data))
                 deleteDataAuthLocal()

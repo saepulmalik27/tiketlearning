@@ -8,12 +8,12 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import Loader from '@/containers/loader'
 
-const HomePage = ({ token, updateUserSession }) => {
+const HomePage = ({ token, authStatus }) => {
     const router = useRouter()
 
     useEffect(() => {
         authValidation()
-    }, [token])
+    }, [authStatus])
 
     const authValidation = () => {
         const accessToken = localStorage.getItem('accessToken')
@@ -34,10 +34,13 @@ const HomePage = ({ token, updateUserSession }) => {
 }
 
 HomePage.propTypes = {
-    updateUserSession: PropTypes.func,
+    authStatus: PropTypes.string,
     token: PropTypes.string,
 }
 
-const mapStateToProps = ({ authData }) => ({ token: authData.token.access })
+const mapStateToProps = ({ authData }) => ({
+    token: authData.token.access,
+    authStatus: authData.status,
+})
 
 export default connect(mapStateToProps, { updateUserSession })(HomePage)

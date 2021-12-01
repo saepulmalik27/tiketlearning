@@ -5,6 +5,7 @@ const initialState = {
     email: '',
     token: {},
     error_message: '',
+    status: '',
 }
 
 const AuthData = (state = initialState, action) => {
@@ -16,6 +17,7 @@ const AuthData = (state = initialState, action) => {
                 name: action.payload.name,
                 email: action.payload.email,
                 token: action.payload.token,
+                status: action.payload.status,
                 error_message: '',
             })
         case AUTH_ERROR:

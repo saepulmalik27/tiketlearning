@@ -15,8 +15,10 @@ const OnBoarding = ({ LogoutAction }) => {
 
     const getAuthFromLocal = () => {
         const user = fetchAuthFromLocal()
-        setName(user.name)
-        setEmail(user.email)
+        if (user) {
+            setName(user.name)
+            setEmail(user.email)
+        }
     }
 
     const router = useRouter()
