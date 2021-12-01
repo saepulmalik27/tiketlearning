@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 // import PropTypes from 'prop-types'
 import Section from '@/components/organisms/section'
 import Container2Column from '@/components/molecules/containers/2column'
@@ -6,6 +6,16 @@ import Card from '@/components/organisms/card'
 import { fetchAuthFromLocal } from '@/utils/function'
 
 const AudioPodcast = props => {
+    const [access, setAccess] = useState('')
+    useEffect(() => {
+        getAccess()
+    }, [access])
+
+    const getAccess = () => {
+        const user = fetchAuthFromLocal()
+        const accessToken = user.token.access
+        setAccess(accessToken)
+    }
     return (
         <Section
             id="podcast"
@@ -34,7 +44,7 @@ const AudioPodcast = props => {
                     cta={[
                         {
                             label: 'Learn More',
-                            src: `https://member.inspigo.id/home/corporate/tiket?refresh=${fetchAuthFromLocal}.token.access`,
+                            src: `https://member.inspigo.id/home/corporate/tiket?token=${access}`,
                         },
                     ]}>
                     <h1 className="m-b-1"> On-Demand Learning </h1>

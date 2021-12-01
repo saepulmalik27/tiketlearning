@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 // import PropTypes from 'prop-types'
 import Section from '@/components/organisms/section'
 import Container2Column from '@/components/molecules/containers/2column'
 import Card from '@/components/organisms/card'
+import { fetchAuthFromLocal } from '@/utils/function'
 
 const Leaderboard = props => {
+    const [access, setAccess] = useState('')
+    useEffect(() => {
+        getAccess()
+    }, [access])
+
+    const getAccess = () => {
+        const user = fetchAuthFromLocal()
+        const accessToken = user.token.access
+        setAccess(accessToken)
+    }
+
     return (
         <Section
             id="leaderboard"
@@ -35,7 +47,7 @@ const Leaderboard = props => {
                     cta={[
                         {
                             label: 'Learn More',
-                            src: 'https://member.inspigo.id/home/corporate-dashboard/tiket',
+                            src: `https://member.inspigo.id/home/corporate-dashboard/tiket?token=${access}`,
                         },
                     ]}>
                     <h1 className="m-b-1"> Leaderboard </h1>
