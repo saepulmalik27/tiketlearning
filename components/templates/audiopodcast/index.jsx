@@ -7,7 +7,22 @@ import { fetchAuthFromLocal } from '@/utils/function'
 
 const AudioPodcast = props => {
     return (
-        <Section id="podcast">
+        <Section
+            id="podcast"
+            decoration={[
+                {
+                    src: '/images/decoration-star.png',
+                    style: {
+                        position: 'absolute',
+                        bottom: '20%',
+                        left: '30%',
+                        width: '3.125rem',
+                        height: '3.125rem',
+                    },
+                    width: '77',
+                    height: '86',
+                },
+            ]}>
             <Container2Column illu={'/images/podcast.png'}>
                 <Card
                     title={{

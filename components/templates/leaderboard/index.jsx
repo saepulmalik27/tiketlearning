@@ -6,7 +6,22 @@ import Card from '@/components/organisms/card'
 
 const Leaderboard = props => {
     return (
-        <Section id="leaderboard">
+        <Section
+            id="leaderboard"
+            decoration={[
+                {
+                    src: '/images/decoration-wave.png',
+                    style: {
+                        position: 'absolute',
+                        bottom: '20%',
+                        right: '10%',
+                        width: '6.375rem',
+                        height: '3.5rem',
+                    },
+                    width: '102',
+                    height: '56',
+                },
+            ]}>
             <Container2Column
                 variant="reversed"
                 illu={'/images/tman-leaderboard.png'}>

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Header from '@/components/templates/header'
 import Helpdesk from '@/components/molecules/Helpdesk'
+import Footer from '@/components/molecules/footer'
 
 const Layout = ({ children }) => {
     return (
@@ -9,6 +10,7 @@ const Layout = ({ children }) => {
             <Header />
             <main>{children}</main>
             <Helpdesk />
+            <Footer />
         </>
     )
 }

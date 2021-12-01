@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './style.module.scss'
 import cx from 'classnames'
 import PropTypes from 'prop-types'
+import Image from 'next/image'
 
 const Section = props => {
     const { children, className, id, variant } = props
@@ -23,7 +24,12 @@ const Section = props => {
                 ? props.decoration.map((val, key) => {
                       return (
                           <div style={val.style} key={key}>
-                              <img src={val.url} alt="decoration" />
+                              <Image
+                                  src={val.src}
+                                  alt="decoration"
+                                  width={val.width}
+                                  height={val.height}
+                              />
                           </div>
                       )
                   })

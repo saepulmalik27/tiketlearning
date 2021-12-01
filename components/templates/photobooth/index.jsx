@@ -16,7 +16,33 @@ const Photobooth = props => {
                 />
             </div>
             <div className={styles.photobooth_container}>
-                <Section>
+                <Section
+                    decoration={[
+                        {
+                            src: '/images/decoration-star.png',
+                            style: {
+                                position: 'absolute',
+                                top: '0',
+                                right: '10%',
+                                width: '3.125rem',
+                                height: '3.125rem',
+                            },
+                            width: '77',
+                            height: '86',
+                        },
+                        {
+                            src: '/images/decoration-wave.png',
+                            style: {
+                                position: 'absolute',
+                                bottom: '10%',
+                                left: '10%',
+                                width: '6.375rem',
+                                height: '3.5rem',
+                            },
+                            width: '102',
+                            height: '56',
+                        },
+                    ]}>
                     <div className={styles.photobooth_card}>
                         <div className={styles.photobooth_card_header}>
                             <h1>Give Your Best Smile</h1>

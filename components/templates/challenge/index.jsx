@@ -6,7 +6,22 @@ import Card from '@/components/organisms/card'
 
 const Challenge = props => {
     return (
-        <Section id="challenge">
+        <Section
+            id="challenge"
+            decoration={[
+                {
+                    src: '/images/decoration-star.png',
+                    style: {
+                        position: 'absolute',
+                        bottom: '20%',
+                        left: '30%',
+                        width: '3.125rem',
+                        height: '3.125rem',
+                    },
+                    width: '77',
+                    height: '86',
+                },
+            ]}>
             <Container2Column illu={'/images/cuate.png'}>
                 <Card
                     title={{
