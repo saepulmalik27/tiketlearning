@@ -41,7 +41,7 @@ const Hero = props => {
                                         <Icon name="instagram" multiplier={1} />
                                     </div>
                                     <Link href="https://www.instagram.com/peopleattiket/">
-                                        <a> @peopleattiket</a>
+                                        <a target="_blank"> @peopleattiket</a>
                                     </Link>
                                 </ContainerFlex>
                             </div>
@@ -50,8 +50,11 @@ const Hero = props => {
                                     <div className="p-r-1">
                                         <Icon name="browser" multiplier={1} />
                                     </div>
-                                    <Link href="https://www.learningtiket.com">
-                                        <a> www.learningtiket.com</a>
+                                    <Link href="https://www.learningattiket.com">
+                                        <a target="_blank">
+                                            {' '}
+                                            www.learningattiket.com
+                                        </a>
                                     </Link>
                                 </ContainerFlex>
                             </div>
@@ -63,8 +66,10 @@ const Hero = props => {
                                             multiplier={1.25}
                                         />
                                     </div>
-                                    <Link href="https://www.instagram.com/peopleattiket/">
-                                        <a> People at Tiket</a>
+                                    <Link
+                                        href="https://www.youtube.com/c/tiket"
+                                        target="_blank">
+                                        <a target="_blank"> People at Tiket</a>
                                     </Link>
                                 </ContainerFlex>
                             </div>
@@ -72,7 +77,7 @@ const Hero = props => {
                     </div>
                     <div className={cx(styles.item, styles.illu)}>
                         <Image
-                            src={'/images/hero_tman.png'}
+                            src={'/images/hero_tiket.png'}
                             width="500"
                             height="500"
                         />

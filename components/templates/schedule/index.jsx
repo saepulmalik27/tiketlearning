@@ -24,7 +24,7 @@ const Schedule = ({ events, getEvents, type }) => {
                             content: val.description,
                             // date: '3 Desember 2021, 15.00 - 17:00',
                         }}
-                        cta={[{ title: 'Gabung', url: 'https://google.com' }]}
+                        cta={val.actions}
                         variant={'column'}
                         label={{
                             category: 'Webinar',

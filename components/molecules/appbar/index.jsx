@@ -31,7 +31,7 @@ const Appbar = ({ activeSidebar, toggleSidebar }) => {
                         },
                         {
                             url: '#podcast',
-                            label: 'OndemandLearning',
+                            label: 'On-Demand Learning',
                         },
                         {
                             url: '#leaderboard',

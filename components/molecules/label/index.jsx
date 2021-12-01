@@ -52,7 +52,7 @@ const Label = ({ title, description, size, variant, headline, style }) => {
 
     return (
         <div className={cx(styles.label, sizeLabel, align)} style={{ style }}>
-            <h2 className={cx(sizeTitle, head)}>{title}</h2>
+            <h2 className={cx(sizeTitle, head, 'm-b-1')}>{title}</h2>
             <div dangerouslySetInnerHTML={{ __html: description }}></div>
         </div>
     )

@@ -61,7 +61,7 @@ const LoginForm = ({ authLogin, authData }) => {
         <div className={styles.loginform}>
             <Label
                 title={'Sign in'}
-                description="<p>Please insert your Inspigo account information</p>"
+                description="<p>Please sign in with your registered account</p>"
             />
             <Input
                 label="Email"
