@@ -48,6 +48,7 @@ const Leaderboard = props => {
                         {
                             label: 'Learn More',
                             src: `https://member.inspigo.id/home/corporate-dashboard/tiket?token=${access}`,
+                            behavior: '_self',
                         },
                     ]}>
                     <h1 className="m-b-1"> Leaderboard </h1>

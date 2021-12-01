@@ -44,7 +44,7 @@ const Card = ({ body, children, title, cta }) => {
                     }}
                     variant={'primary'}
                     cta={() => {
-                        window.open(val.src, '_blank')
+                        window.open(val.src, val.behavior)
                     }}
                 />
             )

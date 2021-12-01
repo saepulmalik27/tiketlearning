@@ -21,15 +21,13 @@
         &_body {
             display: flex;
             margin-bottom: 2rem;
+            justify-content: space-between;
             @include media-max-width($mobile-breakpoint) {
                 flex-direction: column;
             }
 
-            div:first-child {
-                margin-right: 1rem;
-                @include media-max-width($mobile-breakpoint) {
-                    margin-bottom: 1rem;
-                }
+            div {
+                margin: 1rem;
             }
         }
         &_footer {

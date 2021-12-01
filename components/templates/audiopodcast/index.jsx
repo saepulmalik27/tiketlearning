@@ -45,6 +45,7 @@ const AudioPodcast = props => {
                         {
                             label: 'Learn More',
                             src: `https://member.inspigo.id/home/corporate/tiket?token=${access}`,
+                            behavior: '_self',
                         },
                     ]}>
                     <h1 className="m-b-1"> On-Demand Learning </h1>

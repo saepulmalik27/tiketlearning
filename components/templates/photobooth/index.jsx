@@ -73,7 +73,7 @@ const Photobooth = props => {
                                         '_blank'
                                     )
                                 }}
-                                variant={'secondary'}
+                                variant={'primary'}
                             />
                         </div>
                     </div>
