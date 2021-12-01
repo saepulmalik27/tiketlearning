@@ -20,13 +20,13 @@ const Carousel = ({ children, className, title }) => {
                 <div
                     className={cx(
                         styles.carousel,
-                        children.length < 3 ? styles.center : '',
+                        children && children.length < 3 ? styles.center : '',
                         className
                     )}
                     ref={ref}>
                     {children}
                 </div>
-                {children.length > 1 ? (
+                {children && children.length > 1 ? (
                     <div
                         className={styles.navigation__left}
                         onClick={() => scroll(-200)}>
@@ -38,7 +38,7 @@ const Carousel = ({ children, className, title }) => {
                     </div>
                 ) : null}
 
-                {children.length > 1 ? (
+                {children && children.length > 1 ? (
                     <div
                         className={styles.navigation__right}
                         onClick={() => scroll(200)}>
@@ -55,9 +55,17 @@ const Carousel = ({ children, className, title }) => {
 }
 
 Carousel.propTypes = {
-    children: PropTypes.arrayOf(PropTypes.element).isRequired,
+    children: PropTypes.oneOfType([
+        PropTypes.array,
+        PropTypes.object,
+        PropTypes.element,
+    ]),
     className: PropTypes.string,
     title: PropTypes.string,
+}
+
+Carousel.defaultProps = {
+    children: [],
 }
 
 export default Carousel

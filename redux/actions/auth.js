@@ -14,7 +14,7 @@ export const apiStart = () => ({
     payload: true,
 })
 
-const apiEnd = () => ({
+export const apiEnd = () => ({
     type: API_END,
     payload: false,
 })

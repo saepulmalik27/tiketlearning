@@ -3,6 +3,7 @@ import React from 'react'
 import Section from '@/components/organisms/section'
 import Container2Column from '@/components/molecules/containers/2column'
 import Card from '@/components/organisms/card'
+import { fetchAuthFromLocal } from '@/utils/function'
 
 const AudioPodcast = props => {
     return (
@@ -18,7 +19,7 @@ const AudioPodcast = props => {
                     cta={[
                         {
                             label: 'Learn More',
-                            src: 'https://member.inspigo.id/home/corporate/tiket',
+                            src: `https://member.inspigo.id/home/corporate/tiket?refresh=${fetchAuthFromLocal}.token.access`,
                         },
                     ]}>
                     <h1 className="m-b-1"> On-Demand Learning </h1>

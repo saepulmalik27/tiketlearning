@@ -7,7 +7,7 @@ import Hero from '@/components/templates/hero'
 import Leaderboard from '@/components/templates/leaderboard'
 import Photobooth from '@/components/templates/photobooth'
 import PostIt from '@/components/templates/postit'
-import Schedule from '@/components/templates/schedule'
+import Schedule from '@/containers/schedule'
 import Layout from '@/hoc/layouts/common'
 import React from 'react'
 
