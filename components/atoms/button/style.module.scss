@@ -4,7 +4,7 @@
     outline: none;
     border: none;
     @include global-radius();
-    @include button_animation();
+    // @include button_animation();
     cursor: pointer;
     overflow: hidden;
     font-weight: 400;
@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // max-width: 15rem;
+    max-width: 15rem;
     padding: 1rem 2rem;
     background-color: $primary-btn;
     &_secondary {
@@ -39,8 +39,8 @@
     }
 
     &_sm {
-        padding: 0.81rem 3.75rem;
-        max-width: 2rem;
+        padding: 0.81rem 5.75rem;
+        max-width: 14.25rem;
         font-size: 1rem;
     }
 }

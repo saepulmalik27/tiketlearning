@@ -13,7 +13,7 @@ const AudioPodcast = props => {
 
     const getAccess = () => {
         const user = fetchAuthFromLocal()
-        const accessToken = user.token.access
+        const accessToken = user.token.refresh
         setAccess(accessToken)
     }
     return (
@@ -44,7 +44,7 @@ const AudioPodcast = props => {
                     cta={[
                         {
                             label: 'Learn More',
-                            src: `https://member.inspigo.id/home/corporate/tiket?token=${access}`,
+                            src: `https://member.inspigo.id/home/corporate/tiket?refresh=${access}`,
                             behavior: '_self',
                         },
                     ]}>

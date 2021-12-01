@@ -13,7 +13,7 @@ const Leaderboard = props => {
 
     const getAccess = () => {
         const user = fetchAuthFromLocal()
-        const accessToken = user.token.access
+        const accessToken = user.token.refresh
         setAccess(accessToken)
     }
 
@@ -47,7 +47,7 @@ const Leaderboard = props => {
                     cta={[
                         {
                             label: 'Learn More',
-                            src: `https://member.inspigo.id/home/corporate-dashboard/tiket?token=${access}`,
+                            src: `https://member.inspigo.id/home/corporate-dashboard/tiket?refresh=${access}`,
                             behavior: '_self',
                         },
                     ]}>
