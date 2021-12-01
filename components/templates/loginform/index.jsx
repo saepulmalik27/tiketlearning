@@ -6,6 +6,7 @@ import Label from '@/components/molecules/label'
 import Button from '@/components/atoms/button'
 import { validateEmail } from '@/utils/function'
 import Icon from '@/components/atoms/icon'
+import cx from 'classnames'
 
 const LoginForm = ({ authLogin, authData }) => {
     const [password, setPassword] = useState('')
@@ -27,11 +28,10 @@ const LoginForm = ({ authLogin, authData }) => {
     const renderEmailValidation = () => {
         if (email.length > 5 && validateEmail(email) === false) {
             return (
-                <>
-                    <p className={styles.notvalid}>
-                        <Icon name="warning" multiplier={1} /> Email not valid
-                    </p>
-                </>
+                <div className={cx(styles.notvalid, 'm-b-0')}>
+                    <Icon name="warning" multiplier={1} />
+                    <p>email not valid</p>
+                </div>
             )
         } else {
             return null
@@ -41,11 +41,16 @@ const LoginForm = ({ authLogin, authData }) => {
     const renderError = () => {
         if (authData.error_message !== '') {
             return (
-                <p className={styles.notvalid}>
-                    {' '}
-                    <Icon name="warning" multiplier={1} /> email and password
-                    not match{' '}
-                </p>
+                <div className="m-b-0">
+                    <div className={styles.notvalid}>
+                        <Icon name="warning" multiplier={1} />
+                        <p>please make sure you fill the right password</p>
+                    </div>
+                    <div className={styles.notvalid}>
+                        <Icon name="warning" multiplier={1} />
+                        <p>and make sure you have the right access</p>
+                    </div>
+                </div>
             )
         } else {
             return null

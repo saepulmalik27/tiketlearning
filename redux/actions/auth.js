@@ -35,7 +35,7 @@ export const authLogin = data => dispatch => {
     }
 
     axios
-        .post('https://inspigo-b2b-api.herokuapp.com/login', data)
+        .post('https://inspigo-b2b-api.herokuapp.com/tiket/login', data)
         .then(({ data }) => {
             data.status = 'login'
             dispatch(authSuccess(data))

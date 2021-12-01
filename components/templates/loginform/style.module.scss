@@ -16,8 +16,12 @@
     }
 
     .notvalid {
-        color: #ff7171;
-        font-size: 0.75rem;
-        margin-bottom: 1rem;
+        p {
+            color: #ff7171;
+            font-size: 0.75rem;
+            padding-left: 0.4rem;
+        }
+        display: flex;
+        align-items: center;
     }
 }
