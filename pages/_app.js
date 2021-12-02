@@ -1,5 +1,5 @@
 // Libraries
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Head from 'next/head'
 
@@ -9,17 +9,21 @@ import { IS_DEVELOPMENT } from 'utils/constants'
 // Styles
 import 'styles/App.global.scss'
 import { wrapper } from '@/redux/store'
+import TagManager from 'react-gtm-module'
 
 const App = ({ Component, pageProps }) => {
     const meta = {
-        title: 'Inspigo',
+        title: 'tiket to inspire',
         image: 'https://cdn.inspigo.id/public/cover/meta-image.png',
-        description:
-            'Dapatkan inspirasi & skill baru lewat berbagai topik menarik, kapan, dan di mana saja',
+        description: 'tiket to inspire collaboration tiket.com and inspigo',
         keywords:
-            'inspigo, podcast, audio playbook, video on demand, jadi lebih siap',
-        url: 'https://inspigo.id',
+            'tiket.com, inspigo, podcast, audio playbook, video on demand, #jadilebihsiap, learningattiket',
+        url: 'https://www.learningattiket.com',
     }
+
+    useEffect(() => {
+        TagManager.initialize({ gtmId: 'GTM-PFVNM47' })
+    }, [])
 
     return (
         <React.Fragment>
