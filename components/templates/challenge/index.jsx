@@ -33,8 +33,9 @@ const Challenge = props => {
                     cta={[
                         {
                             label: 'Learn More',
-                            src: 'https://www.learningtiket.com',
+                            src: 'https://drive.google.com/drive/folders/1hZx0AUCmV4eoIyx8ulzO5b--1TlvTqiZ?usp=sharing',
                             id: 'challenge',
+                            behavior: '_blank',
                         },
                     ]}>
                     <h1 className="m-b-1"> List of Challenge </h1>
