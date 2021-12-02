@@ -3,7 +3,6 @@ import { EVENT_ERROR, GET_EVENT } from '../types'
 import { apiEnd, apiStart } from './auth'
 
 export const GetEvent = data => {
-    console.log(data)
     return {
         type: GET_EVENT,
         payload: data,

@@ -7,8 +7,9 @@ import { updateUserSession } from '@/redux/actions/auth'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import Loader from '@/containers/loader'
+import withAuth from '@/hoc/wrappers/withAuth'
 
-const HomePage = ({ token, authStatus }) => {
+const HomePage = ({ authStatus }) => {
     const router = useRouter()
 
     useEffect(() => {
@@ -39,8 +40,9 @@ HomePage.propTypes = {
 }
 
 const mapStateToProps = ({ authData }) => ({
-    token: authData.token.access,
     authStatus: authData.status,
 })
 
-export default connect(mapStateToProps, { updateUserSession })(HomePage)
+export default connect(mapStateToProps, { updateUserSession })(
+    withAuth(HomePage)
+)

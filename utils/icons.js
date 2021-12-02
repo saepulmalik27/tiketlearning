@@ -548,7 +548,6 @@ export const BadgeMindfullness = (fill, stroke, multiplier) => {
 }
 
 export const Chevron = (fill, stroke, multiplier) => {
-    console.log(fill)
     return (
         <svg
             width={multiplier * 16}

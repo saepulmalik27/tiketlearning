@@ -62,8 +62,6 @@ export const LogoutAction = () => dispatch => {
     const refreshToken = localStorage.getItem('refreshToken')
 
     if (refreshToken) {
-        console.log('hallo')
-        console.log(refreshToken)
         dispatch(apiStart())
         axios
             .post('https://inspigo-b2b-api.herokuapp.com/logout', {

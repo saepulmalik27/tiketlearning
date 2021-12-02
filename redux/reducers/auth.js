@@ -9,7 +9,6 @@ const initialState = {
 }
 
 const AuthData = (state = initialState, action) => {
-    console.log(action.type)
     switch (action.type) {
         case AUTH_SUCCESS:
             return (state = {
