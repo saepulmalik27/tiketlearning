@@ -19,7 +19,7 @@ const HomePage = ({ authStatus }) => {
     const authValidation = () => {
         const accessToken = localStorage.getItem('accessToken')
         if (!accessToken) {
-            router.push('/login')
+            router.push('/maintenance')
         }
     }
 

@@ -7,7 +7,7 @@ const withAuth = Component => {
 
             const accessToken = localStorage.getItem('accessToken')
             if (!accessToken) {
-                Router.replace('/login')
+                Router.replace('/maintenance')
                 return null
             }
 
