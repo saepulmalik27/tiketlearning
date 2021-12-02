@@ -41,3 +41,7 @@ export const deleteDataAuthLocal = () => {
         localStorage.removeItem('refreshToken')
     }
 }
+
+export const stringToId = string => {
+    return string.trim().replace(/\s/g, '_').toLowerCase()
+}

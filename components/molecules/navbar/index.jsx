@@ -58,6 +58,7 @@ const Navbar = ({
                         }}>
                         <Link href={item.url}>
                             <a
+                                id={item.id}
                                 className={styles.nav_link}
                                 target={item.behavior || null}>
                                 {item.label}

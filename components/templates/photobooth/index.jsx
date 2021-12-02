@@ -74,6 +74,7 @@ const Photobooth = props => {
                                     )
                                 }}
                                 variant={'primary'}
+                                id={'photobooth'}
                             />
                         </div>
                     </div>

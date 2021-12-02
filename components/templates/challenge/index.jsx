@@ -34,6 +34,7 @@ const Challenge = props => {
                         {
                             label: 'Learn More',
                             src: 'https://www.learningtiket.com',
+                            id: 'challenge',
                         },
                     ]}>
                     <h1 className="m-b-1"> List of Challenge </h1>

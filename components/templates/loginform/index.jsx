@@ -84,7 +84,12 @@ const LoginForm = ({ authLogin, authData }) => {
                 onChange={e => handleChange(e, 'password')}
             />
             {renderError()}
-            <Button label="submit" variant="primary" cta={handleSubmit} />
+            <Button
+                label="submit"
+                variant="primary"
+                id="login"
+                cta={handleSubmit}
+            />
         </div>
     )
 }

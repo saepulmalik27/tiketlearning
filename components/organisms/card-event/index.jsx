@@ -4,6 +4,7 @@ import styles from './style.module.scss'
 import React from 'react'
 import cx from 'classnames'
 import PropTypes from 'prop-types'
+import { stringToId } from '@/utils/function'
 
 const CardEvent = ({ banner, event, variant, cta, label }) => {
     let contentDirection = ''
@@ -54,6 +55,7 @@ const CardEvent = ({ banner, event, variant, cta, label }) => {
                         label={val.title}
                         icon={false}
                         size={'small'}
+                        id={`card_event_${key}_${stringToId(event.title)}`}
                     />
                 ))}
             </div>
