@@ -42,14 +42,17 @@ const LoginForm = ({ authLogin, authData }) => {
         if (authData.error_message !== '') {
             return (
                 <div className="m-b-0">
-                    <div className={styles.notvalid}>
-                        <Icon name="warning" multiplier={1} />
-                        <p>please make sure you fill the right password</p>
-                    </div>
-                    <div className={styles.notvalid}>
-                        <Icon name="warning" multiplier={1} />
-                        <p>and make sure you have the right access</p>
-                    </div>
+                    {authData.error_message === 'unauthorized' ? (
+                        <div className={styles.notvalid}>
+                            <Icon name="warning" multiplier={1} />
+                            <p>email and password are not match</p>
+                        </div>
+                    ) : (
+                        <div className={styles.notvalid}>
+                            <Icon name="warning" multiplier={1} />
+                            <p>{authData.error_message}</p>
+                        </div>
+                    )}
                 </div>
             )
         } else {
