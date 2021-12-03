@@ -15,7 +15,7 @@ const maintenance = () => {
                     width="500"
                     height="500"
                 />
-                <h1 className="text-primary">Under Contruction</h1>
+                <h1 className="text-primary">Will be live in December 6</h1>
             </center>
         </div>
     )
