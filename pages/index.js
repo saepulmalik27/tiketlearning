@@ -19,14 +19,14 @@ const HomePage = ({ authStatus }) => {
     const authValidation = () => {
         const accessToken = localStorage.getItem('accessToken')
         if (!accessToken) {
-            router.push('/maintenance')
+            router.push('/login')
         }
     }
 
     return (
         <React.Fragment>
             <Head>
-                <title>Home | Tiket Learning Carnival</title>
+                <title>Home | Learning at tiket</title>
             </Head>
             <Home />
             <Loader />

@@ -41,6 +41,15 @@ const App = ({ Component, pageProps }) => {
                 <meta property="og:description" content={meta.description} />
                 <meta property="og:url" content={meta.url} />
 
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta property="twitter::title" content={meta.title} />
+                <meta property="twitter::image" content={meta.image} />
+                <meta
+                    property="twitter::description"
+                    content={meta.description}
+                />
+                <meta property="twitter::url" content={meta.url} />
+
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="canonical" href="https://inspigo.id" />
 
