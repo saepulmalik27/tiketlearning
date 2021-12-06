@@ -42,7 +42,8 @@ export const authLogin = data => dispatch => {
             saveAuthToLocal(data)
         })
         .catch(error => {
-            dispatch(authError(error))
+            console.log(error.response)
+            dispatch(authError(error.response.data.message))
         })
         .then(() => {
             dispatch(apiEnd())

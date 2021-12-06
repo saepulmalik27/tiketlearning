@@ -24,30 +24,37 @@ const Appbar = ({ activeSidebar, toggleSidebar }) => {
                         {
                             url: '#about',
                             label: 'About',
+                            id: 'about_menu',
                         },
                         {
                             url: '#schedule',
                             label: 'MySchedule',
+                            id: 'schedule_menu',
                         },
                         {
                             url: '#podcast',
                             label: 'On-Demand Learning',
+                            id: 'podcast_menu',
                         },
                         {
                             url: '#leaderboard',
                             label: 'Leaderboard',
+                            id: 'leaderboard_menu',
                         },
                         {
                             url: '#challenge',
                             label: 'Challenge',
+                            id: 'challenge_menu',
                         },
                         {
                             url: '#postit',
                             label: 'Post-it',
+                            id: 'postit_menu',
                         },
                         {
                             url: '#photobooth',
                             label: 'PhotoBooth',
+                            id: 'photobooth_menu',
                         },
                     ]}
                 />

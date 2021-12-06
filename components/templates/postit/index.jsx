@@ -34,6 +34,7 @@ const PostIt = props => {
                         {
                             label: 'Learn More',
                             src: 'https://jamboard.google.com/d/1VswRwCjNKdAVySnrYdy_OzOYauhtMKP3mf4jaROI1cE/edit?usp=sharing',
+                            id: 'postit',
                         },
                     ]}>
                     <h1 className="m-b-1"> Post-it </h1>

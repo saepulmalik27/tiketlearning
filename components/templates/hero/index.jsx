@@ -40,7 +40,9 @@ const Hero = props => {
                                     <div className="p-r-1">
                                         <Icon name="instagram" multiplier={1} />
                                     </div>
-                                    <Link href="https://www.instagram.com/peopleattiket/">
+                                    <Link
+                                        href="https://www.instagram.com/peopleattiket/"
+                                        id="peopleattiket">
                                         <a target="_blank"> @peopleattiket</a>
                                     </Link>
                                 </ContainerFlex>
@@ -50,7 +52,9 @@ const Hero = props => {
                                     <div className="p-r-1">
                                         <Icon name="browser" multiplier={1} />
                                     </div>
-                                    <Link href="https://www.learningattiket.com">
+                                    <Link
+                                        href="https://www.learningattiket.com"
+                                        id="learningattiket">
                                         <a target="_blank">
                                             www.learningattiket.com
                                         </a>
@@ -68,7 +72,12 @@ const Hero = props => {
                                     <Link
                                         href="https://www.youtube.com/c/tiket"
                                         target="_blank">
-                                        <a target="_blank"> People at tiket</a>
+                                        <a
+                                            target="_blank"
+                                            id="peopelattiket_yt">
+                                            {' '}
+                                            People at tiket
+                                        </a>
                                     </Link>
                                 </ContainerFlex>
                             </div>

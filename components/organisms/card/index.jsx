@@ -42,6 +42,7 @@ const Card = ({ body, children, title, cta }) => {
                         disabled: val.icon?.disabled,
                         name: val.icon?.name,
                     }}
+                    id={val.id}
                     variant={'primary'}
                     cta={() => {
                         window.open(val.src, val.behavior)

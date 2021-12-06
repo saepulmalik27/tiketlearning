@@ -18,30 +18,37 @@ const Sidebar = () => {
                     {
                         url: '#about',
                         label: 'About',
+                        id: 'about_sidebar',
                     },
                     {
                         url: '#schedule',
                         label: 'MySchedule',
+                        id: 'schedule_sidebar',
                     },
                     {
                         url: '#podcast',
-                        label: 'OndemandLearning',
+                        label: 'On-Demand Learning',
+                        id: 'podcast_sidebar',
                     },
                     {
                         url: '#leaderboard',
                         label: 'Leaderboard',
+                        id: 'leaderboard_sidebar',
                     },
                     {
                         url: '#challenge',
                         label: 'Challenge',
+                        id: 'challenge_sidebar',
                     },
                     {
                         url: '#postit',
                         label: 'Post-it',
+                        id: 'postit_sidebar',
                     },
                     {
                         url: '#photobooth',
                         label: 'PhotoBooth',
+                        id: 'photobooth_sidebar',
                     },
                 ]}
             />

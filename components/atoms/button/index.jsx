@@ -56,9 +56,9 @@ const Button = ({ variant, size, cta, id, label, icon }) => {
             className={cx(styles.button, typeOfButton, sizeOfButton)}
             onClick={cta}
             id={id || ''}>
-            <div className={styles.text}>
+            <div className={styles.text} id={`${id}_container`}>
                 {renderIcon(icon)}
-                <span>{label}</span>
+                <span id={`${id}_text`}>{label}</span>
             </div>
         </div>
     )
