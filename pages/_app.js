@@ -14,7 +14,7 @@ import TagManager from 'react-gtm-module'
 const App = ({ Component, pageProps }) => {
     const meta = {
         title: 'tiket to inspire',
-        image: 'https://cdn.inspigo.id/public/cover/meta-image.png',
+        image: 'https://ik.imagekit.io/145agqxu54x/tiket_com/Image_from_iOS_1ZZAzuYIsSo.jpg?updatedAt=1638765903512',
         description: 'tiket to inspire collaboration tiket.com and inspigo',
         keywords:
             'tiket.com, inspigo, podcast, audio playbook, video on demand, #jadilebihsiap, learningattiket',
