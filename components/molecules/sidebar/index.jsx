@@ -50,6 +50,11 @@ const Sidebar = () => {
                         label: 'PhotoBooth',
                         id: 'photobooth_sidebar',
                     },
+                    {
+                        url: 'https://member.inspigo.id/forgot-password',
+                        label: 'Forgot Password',
+                        id: 'forgot-password_menu',
+                    },
                 ]}
             />
         </div>

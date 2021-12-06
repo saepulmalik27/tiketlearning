@@ -56,6 +56,11 @@ const Appbar = ({ activeSidebar, toggleSidebar }) => {
                             label: 'PhotoBooth',
                             id: 'photobooth_menu',
                         },
+                        {
+                            url: 'https://member.inspigo.id/forgot-password',
+                            label: 'Forgot Password',
+                            id: 'forgot-password_menu',
+                        },
                     ]}
                 />
             </div>
