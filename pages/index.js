@@ -26,7 +26,7 @@ const HomePage = ({ authStatus }) => {
     return (
         <React.Fragment>
             <Head>
-                <title>Home | Tiket Learning Carnival</title>
+                <title>Home | Learning at tiket</title>
             </Head>
             <Home />
             <Loader />

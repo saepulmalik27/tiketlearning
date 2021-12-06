@@ -20,7 +20,7 @@ const LoginPage = ({ token }) => {
     return (
         <React.Fragment>
             <Head>
-                <title>Login | Tiket Learning Carnival</title>
+                <title>Login | learning at tiket</title>
             </Head>
             <Login />
             <Loader />
