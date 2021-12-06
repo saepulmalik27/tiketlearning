@@ -8,7 +8,7 @@ const Loader = ({ loading }) => {
         return (
             <div className={styles.loader}>
                 <div className={styles.loader_container}>
-                    <Spinner size={'10rem'} color={colors.secondaryPeach} />
+                    <Spinner size={'10rem'} color={colors.wisdomBlue} />
                 </div>
             </div>
         )
