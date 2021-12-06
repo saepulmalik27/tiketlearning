@@ -52,7 +52,7 @@ const Sidebar = () => {
                     },
                     {
                         url: 'https://member.inspigo.id/forgot-password',
-                        label: 'Forgot Password',
+                        label: 'Change Password',
                         id: 'forgot-password_menu',
                     },
                 ]}
