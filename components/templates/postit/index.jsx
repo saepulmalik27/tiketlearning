@@ -33,7 +33,7 @@ const PostIt = props => {
                     cta={[
                         {
                             label: 'Learn More',
-                            src: 'https://jamboard.google.com/d/1VswRwCjNKdAVySnrYdy_OzOYauhtMKP3mf4jaROI1cE/edit?usp=sharing',
+                            src: 'https://padlet.com/broadcast5/PadletLFTita2021',
                             id: 'postit',
                         },
                     ]}>
