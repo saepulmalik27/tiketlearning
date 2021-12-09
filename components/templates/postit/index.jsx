@@ -33,7 +33,7 @@ const PostIt = props => {
                     cta={[
                         {
                             label: 'Learn More',
-                            src: 'https://padlet.com/broadcast5/PadletLFDavid2021',
+                            src: 'https://padlet.com/broadcast5/PadletLFKamal2021',
                             id: 'postit',
                         },
                     ]}>

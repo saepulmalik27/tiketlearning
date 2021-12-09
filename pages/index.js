@@ -7,7 +7,7 @@ import { updateUserSession } from '@/redux/actions/auth'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import Loader from '@/containers/loader'
-import withAuth from '@/hoc/wrappers/withAuthStrick'
+import withAuth from '@/hoc/wrappers/withAuth'
 
 const HomePage = ({ authStatus }) => {
     const router = useRouter()
