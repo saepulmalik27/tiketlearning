@@ -32,7 +32,7 @@ const CardEvent = ({ banner, event, variant, cta, label }) => {
     return (
         <div className={cx(styles.cardevent, contentDirection)}>
             <div className={styles.cardevent_illu}>
-                <Image src={banner} width={300} height={168} />
+                <Image src={banner} width={500} height={280} />
             </div>
             <div className={styles.cardevent_event}>
                 {/* <div style={label.style}>{label.category}</div> */}

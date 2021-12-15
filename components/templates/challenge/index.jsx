@@ -22,7 +22,7 @@ const Challenge = props => {
                     height: '86',
                 },
             ]}>
-            <Container2Column illu={'/images/cuate.png'}>
+            <Container2Column illu={'/images/ask-speaker.png'}>
                 <Card
                     title={{
                         type: 'image',
@@ -33,19 +33,19 @@ const Challenge = props => {
                     cta={[
                         {
                             label: 'Learn More',
-                            src: 'https://drive.google.com/drive/folders/1hZx0AUCmV4eoIyx8ulzO5b--1TlvTqiZ?usp=sharing',
+                            src: 'https://forms.gle/wxyLL4MXpkVyhWab8',
                             id: 'challenge',
                             behavior: '_blank',
                         },
                     ]}>
-                    <h1 className="m-b-1"> List of Challenge </h1>
+                    <h1 className="m-b-1"> Ask The Speakers! </h1>
                     <p>
-                        You can take part in the challenge by sharing the key
-                        takeaways that you get after taking the class on
-                        Instagram Story using the template provided. Don’t
-                        forget to tag @peopleattiket and use the hashtags
-                        #LearningFestival2021 and #Peopleattiket on your
-                        Instagram Story. Find out the full guideline here!
+                        You can take part in the Closing Ceremony events by Ask
+                        to our Special Guest Speaker, Mr. Sandiaga Uno (Ministry
+                        of Tourism and Creative Economy) by Submit your best
+                        question. It will be curated by Learning Festival 2021
+                        Teams to be asked directly to Mr. Sandiaga on our
+                        Closing Ceremony Event.
                     </p>
                 </Card>
             </Container2Column>
